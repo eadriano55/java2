@@ -4,48 +4,14 @@
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
 	version="2.1">
 
-	<persistence-unit name="tarefas">
+	<persistence-unit name="contatos">
 		<description>
             Persistence unit for Hibernate User Guide
         </description>
 
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		
-		<class>orm.modelo.Tarefa</class>
 
-		<properties>
-			<property name="javax.persistence.jdbc.driver"
-				value="com.mysql.jdbc.Driver" />
-
-			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://127.0.0.1/test" />
-
-			<property name="javax.persistence.jdbc.user" value="root" />
-
-			<property name="javax.persistence.jdbc.password"
-				value="123456" />
-
-			<property name="hibernate.dialect"
-				value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-
-			<property name="hibernate.format_sql" value="true" />
-
-			<property name="hibernate.show_sql" value="true" />
-
-			<property name="hibernate.hbm2ddl.auto" value="update" />
-		</properties>
-
-	</persistence-unit>
-
-
-<persistence-unit name="contatos">
-		<description>
-            Persistence unit for Hibernate User Guide
-        </description>
-
-		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-		
-		<class>provajava2.orm.modelo.Contato</class>
+		<class>orm.modelo.Contato</class>
 
 		<properties>
 			<property name="javax.persistence.jdbc.driver"
