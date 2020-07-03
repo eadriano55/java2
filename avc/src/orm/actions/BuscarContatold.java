@@ -10,7 +10,7 @@ import orm.modelo.Contato;
 public class BuscarContatold {
 	public static void main(String[] args) {
 
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("contacts");
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("contatos");
 		EntityManager manager = factory.createEntityManager();
 
 		Scanner ini = new Scanner(System.in);
