@@ -26,7 +26,7 @@ public class AtualizarContato {
 		contato.setEmail(email);
 		contato.setEndereco(endereco);
 		
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("contacts");
+		EntityManagerFactory factory = Persistence.createEntityManagerFactory("contatos");
 		EntityManager manager = factory.createEntityManager();
 		
 		manager.getTransaction().begin();
